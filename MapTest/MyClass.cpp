@@ -16,7 +16,7 @@ CClass::CClass(const char* szName)
 
 CClass::~CClass()
 {
-
+	delete[] m_szBuf;
 }
 
 void CClass::Init()

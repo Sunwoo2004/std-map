@@ -8,6 +8,7 @@ protected:
 
 	TestMap m_TestMap;
 public:
+	void DeleteClass(const char* szName);
 	void CreateTest(const char* szName);
 	CClass* GetTestByValue(const char * szName);
 public:

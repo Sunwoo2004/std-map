@@ -47,3 +47,19 @@ CClass* CMapManager::GetTestByValue(const char* szName)
 	}
 	return NULL;
 }
+
+void CMapManager::DeleteClass(const char* szName)
+{
+	TestMap::iterator iter = m_TestMap.find(szName);
+	if (iter == m_TestMap.end())
+	{
+		return;
+	}
+
+	CClass* pClass = iter->second;
+	if (pClass)
+	{
+		delete pClass;
+		m_TestMap.erase(iter);
+	}
+}

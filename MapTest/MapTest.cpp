@@ -13,4 +13,6 @@ int main()
 	{
 		cout << pClass->GetBuffer() << endl;
 	}
+
+	g_Map.DeleteClass("Test1");
 }
