@@ -16,6 +16,9 @@
     <Filter Include="MapManager">
       <UniqueIdentifier>{2ac173cf-2698-46ea-9557-0b13aa2f2302}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyClass">
+      <UniqueIdentifier>{9fba5423-cb55-4047-8d93-8f624b88d899}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MapTest.cpp">
@@ -24,6 +27,9 @@
     <ClCompile Include="MapManager.cpp">
       <Filter>MapManager</Filter>
     </ClCompile>
+    <ClCompile Include="MyClass.cpp">
+      <Filter>MyClass</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -31,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="MapManager.h">
       <Filter>MapManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass.h">
+      <Filter>MyClass</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

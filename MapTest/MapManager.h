@@ -1,15 +1,15 @@
 #pragma once
-#include <map>
+#include "MyClass.h"
 
 class CMapManager
 {
 protected:
-	typedef std::map<int, const char*> TestMap;
+	typedef std::map<const char *, CClass*> TestMap;
 
 	TestMap m_TestMap;
 public:
-	void CreateTest(const int &iValue, const char * szName);
-	const char * GetTestByValue(const int &iValue);
+	void CreateTest(const char* szName);
+	CClass* GetTestByValue(const char * szName);
 public:
 	static CMapManager& GetInstance();
 private:

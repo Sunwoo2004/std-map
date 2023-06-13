@@ -29,14 +29,18 @@ void CMapManager::Init()
 
 }
 
-void CMapManager::CreateTest(const int& iValue, const char* szName)
+void CMapManager::CreateTest(const char* szName)
 {
-	m_TestMap.insert(TestMap::value_type(iValue, szName));
+	CClass* pClass = new CClass(szName);
+	if (pClass)
+	{
+		m_TestMap.insert(TestMap::value_type(szName, pClass));
+	}
 }
 
-const char* CMapManager::GetTestByValue(const int& iValue)
+CClass* CMapManager::GetTestByValue(const char* szName)
 {
-	TestMap::iterator iter = m_TestMap.find(iValue);
+	TestMap::iterator iter = m_TestMap.find(szName);
 	if (iter != m_TestMap.end())
 	{
 		return iter->second;
